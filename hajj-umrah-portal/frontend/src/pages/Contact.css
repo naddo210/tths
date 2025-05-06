@@ -1,0 +1,15 @@
+.MuiPaper-root {
+  transition: transform 0.3s ease;
+}
+
+.MuiPaper-root:hover {
+  transform: translateY(-5px);
+}
+
+.MuiButton-root {
+  background-color: #1a237e !important;
+}
+
+.MuiButton-root:hover {
+  background-color: #4caf50 !important;
+}

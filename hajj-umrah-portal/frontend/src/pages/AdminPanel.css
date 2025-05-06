@@ -1,0 +1,41 @@
+.admin-panel {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.admin-panel .MuiTableContainer-root {
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.admin-panel .MuiTableCell-head {
+  background-color: #1a237e;
+  color: white;
+  font-weight: bold;
+}
+
+.admin-panel .MuiTableRow-root:hover {
+  background-color: #f5f5f5;
+}
+
+.admin-panel .MuiIconButton-root {
+  margin: 0 5px;
+}
+
+.admin-panel .MuiDialog-paper {
+  min-width: 400px;
+}
+
+.admin-panel .MuiTextField-root {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 600px) {
+  .admin-panel {
+    padding: 10px;
+  }
+  
+  .admin-panel .MuiDialog-paper {
+    min-width: 300px;
+  }
+} 

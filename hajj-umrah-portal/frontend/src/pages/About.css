@@ -1,0 +1,43 @@
+.about-container {
+    padding: 15px;
+    margin: 0 auto;
+
+}
+
+.about-top h1 {
+    color: #080808;
+    font-weight: 600;
+    font-size: 3.2rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.abt-info h2 {
+    color: #3d3c3c;
+
+}
+
+.abt-info {
+    padding: 9px;
+    margin-top: 10px;
+}
+
+.abt-info p {
+    color: #585858;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    word-spacing: 1px;
+    line-height: 1.3rem
+}
+
+.abt-info p span {
+    color: #080808;
+    font-weight: 600;
+}
+
+.btns {
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}

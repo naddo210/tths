@@ -1,0 +1,251 @@
+/* From Uiverse.io by Praashoo7 */ 
+.share {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    transition: .4s ease-in-out;
+    margin-top: 60px;
+  }
+  
+  .btn1 {
+    position: relative;
+    width: 3em;
+    height: 3em;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    transition: .4s all;
+  }
+  
+  .btn1 .instagram {
+    margin-top: 0.1em;
+    fill: #cc39a4;
+  }
+  
+  .btn1 .tooltiptext1 {
+    visibility: hidden;
+    width: 6em;
+    height: 8em;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+    position: absolute;
+    left: -1.5em;
+    top: -8em;
+    z-index: 1;
+    transition: .1s ease-in-out;
+  }
+  
+  .btn1 .tooltiptext1 .card {
+    width: 4em;
+    height: 4em;
+    background-color: white;
+  }
+  
+  .btn1 .tooltiptext1 .account {
+    margin-top: 1em;
+  }
+  
+  .btn1 .tooltiptext1 .username {
+    font-size: 0.7em;
+    margin-top: 1.6em;
+    font-weight: bold;
+  }
+  
+  .btn1:hover .tooltiptext1 {
+    transform: translateY(-1em);
+    visibility: visible;
+  }
+  
+  .btn1:hover {
+    background-color: #cc39a4;
+  }
+  
+  .btn1:hover .instagram {
+    fill: white;
+  }
+  
+  .btn2 {
+    position: relative;
+    width: 3em;
+    height: 3em;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    transition: .4s all;
+  }
+  
+  .btn2 .twitter {
+    margin-top: .25em;
+    margin-left: .1em;
+    fill: #03A9F4;
+  }
+  
+  .btn2 .tooltiptext2 {
+    visibility: hidden;
+    width: 6em;
+    height: 8em;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+    position: absolute;
+    left: -1.5em;
+    top: -8em;
+    z-index: 1;
+    transition: .1s ease-in-out;
+  }
+  
+  .btn2 .tooltiptext2 .card {
+    width: 4em;
+    height: 4em;
+    background-color: white;
+  }
+  
+  .btn2 .tooltiptext2 .account {
+    margin-top: 1em;
+  }
+  
+  .btn2 .tooltiptext2 .username {
+    font-size: 0.6em;
+    margin-top: 1.6em;
+    font-weight: bold;
+  }
+  
+  .btn2:hover .tooltiptext2 {
+    transform: translateY(-1em);
+    visibility: visible;
+  }
+  
+  .btn2:hover {
+    background-color: #03A9F4;
+  }
+  
+  .btn2:hover .twitter {
+    fill: white;
+  }
+  
+  .btn3 {
+    position: relative;
+    width: 3em;
+    height: 3em;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    transition: .4s all;
+  }
+  
+  .btn3 .tooltiptext3 {
+    visibility: hidden;
+    width: 6em;
+    height: 8em;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+    position: absolute;
+    left: -1.5em;
+    top: -8em;
+    z-index: 1;
+    transition: .1s ease-in-out;
+  }
+  
+  .btn3 .tooltiptext3 .card {
+    width: 4em;
+    height: 4em;
+    background-color: white;
+  }
+  
+  .btn3 .tooltiptext3 .account {
+    margin-top: 1em;
+  }
+  
+  .btn3 .tooltiptext3 .username {
+    font-size: 0.7em;
+    margin-top: 1.6em;
+    font-weight: bold;
+  }
+  
+  .btn3:hover .tooltiptext3 {
+    transform: translateY(-1em);
+    visibility: visible;
+  }
+  
+  .btn3:hover {
+    background-color: black;
+  }
+  
+  .btn3:hover .git {
+    fill: white;
+  }
+  .btn1, .btn2, .btn3 {
+    width: 60px;                /* Set a fixed width */
+    height: 60px;               /* Set a fixed height to match */
+    border-radius: 50%;         /* Makes it a perfect circle */
+    display: flex;              /* Center content */
+    align-items: center;        /* Vertical centering */
+    justify-content: center;    /* Horizontal centering */
+    background-color: #fff;     /* Or whatever background */
+    border: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  svg {
+    width: 24px;    /* Resize the icon if needed */
+    height: 24px;
+    fill: #000;     /* Adjust color if needed */
+  }
+  
+  .share {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .share a {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  
+  .share a:hover {
+    transform: scale(1.1);
+  }
+  
+  .instagram { fill: #cc39a4; }
+  .twitter   { fill: #03A9F4; }
+  .git       { fill: black; }
+  .whatsapp  { fill: #25D366; }
+  .call      { fill: #0c45ad; }
+  
+  .btn1:hover .instagram,
+  .btn2:hover .twitter,
+  .btn3:hover .git,
+  .btn4:hover .whatsapp,
+  .btn5:hover .call {
+    fill: white;
+  }
+  
+  .btn1:hover     { background-color: #cc39a4; }
+  .btn2:hover     { background-color: #03A9F4; }
+  .btn3:hover     { background-color: black; }
+  .btn4:hover     { background-color: #25D366; }
+  .btn5:hover     { background-color: #4CAF50; }
+  

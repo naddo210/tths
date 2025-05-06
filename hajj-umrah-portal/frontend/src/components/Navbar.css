@@ -1,0 +1,186 @@
+/* .navbar {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+.arby {
+  color: #1a237e;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.nav-links button {
+  color: #333 !important;
+  font-weight: 500;
+}
+
+.nav-links button:hover {
+  color: #1a237e !important;
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
+}  */
+
+:root {
+  --emerald: #218643;
+  --gold: #FFD700;
+  --black: #333333;
+  --white: #FFFFFF;
+}
+
+.navbar {
+  background-color: var(--emerald);
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 3%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
+.logo h4 {
+  color: var(--white);
+  margin-left: 8px;
+  font-size: 14px;
+  font-family: 'sans-serif';
+  font-weight: 600;
+}
+
+
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 25px;
+  height: 20px;
+  justify-content: space-between;
+  z-index: 1101;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background: var(--white);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile Drawer */
+.mobile-drawer {
+  position: fixed;
+  top: 70px;
+  left: -100%;
+  width: 70%;
+  height: 100vh;
+  background-color: rgb(95, 93, 109);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  transition: left 0.3s ease;
+  z-index: 1100;
+}
+
+.mobile-drawer.show {
+  left: 0;
+}
+
+.mobile-drawer a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.mobile-drawer a:hover {
+  color: var(--gold);
+}
+
+/* Dark Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none;
+}
+
+.overlay.show {
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

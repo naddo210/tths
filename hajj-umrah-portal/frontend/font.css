@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'arby';
+    src: url('/fonts/Khalid.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'shayan';
+    src: url('/fonts/Shayan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'awal';
+    src: url('/fonts/aAwalRamadhan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .arby {
+    font-family: 'arby', sans-serif;
+  }
+  
+  .shayan {
+    font-family: 'shayan', sans-serif;
+  }
+  
+  .awal {
+    font-family: 'awal', sans-serif;
+  }
+  

@@ -1,0 +1,15 @@
+.MuiCard-root {
+  transition: transform 0.3s ease;
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-5px);
+}
+
+.MuiCardMedia-root {
+  transition: opacity 0.3s ease;
+}
+
+.MuiCard-root:hover .MuiCardMedia-root {
+  opacity: 0.9;
+}
